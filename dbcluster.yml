@@ -1,0 +1,13 @@
+---
+# This Playbook would deploy the whole mariadb galera cluster.
+
+
+#- hosts: localhost
+#  gather_facts: no
+#  roles:
+#     - role: hypervisor
+
+- hosts: dbcluster
+  roles:
+    - role: common
+    - role: galera

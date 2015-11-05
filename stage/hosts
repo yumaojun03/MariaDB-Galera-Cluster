@@ -1,0 +1,8 @@
+[dbcluster]
+db01 ansible_ssh_host="172.16.1.3" ansible_ssh_user="root" ansible_ssh_port=22 ansible_ssh_pass="newmedia"
+db02 ansible_ssh_host="172.16.1.6" ansible_ssh_user="root" ansible_ssh_port=22 ansible_ssh_pass="newmedia"
+db03 ansible_ssh_host="172.16.1.5" ansible_ssh_user="root" ansible_ssh_port=22 ansible_ssh_pass="newmedia"
+
+[localhost]
+localhost ansible_ssh_host=localhost ansible_ssh_user="root" ansible_ssh_port=22 ansible_ssh_pass="yusky0902"
+

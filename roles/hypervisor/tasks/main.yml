@@ -1,0 +1,7 @@
+---
+
+- include: vcenter.yml
+  when: hypervisor_vcenter == true
+
+- include: cmop.yml
+  when: hypervisor_cmop == true

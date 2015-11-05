@@ -1,0 +1,29 @@
+---
+# defaults file for ansible-mariadb-galera-cluster
+
+
+#defines if the cluster should be reconfigured
+reconfigure_galera: true
+
+# define the name of the cluster...define here or in group_vars/group
+galera_cluster_name: "my_cluster_name"
+
+# define the IP addresses of the nodes which will be part of the cluster...define here or in group_vars/group
+galera_cluster_nodes: 
+                     - "ip"  : "172.16.1.3"
+                       "name": "node1"
+                     - "ip"  : "172.16.1.6" 
+                       "name": "node2"
+                     - "ip"  : "172.16.1.5"
+                       "name": "node3"
+
+#defines a node in the cluster as master...define as true for one host in host_vars/host
+mysql_master: false  
+
+#define the replication user and password 
+wsrep_sst_user : "replUser"
+wsrep_sst_pass : "replPass"
+
+
+# set mysql root password
+mysql_root_password: "mypass"
